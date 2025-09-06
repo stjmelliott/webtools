@@ -1,0 +1,2 @@
+{"ts":"2025-08-18 13:52:08","level":"INFO","msg":"db2_run_cmd","data":{"cmd":"db2cmd /c /w /i \"db2 CONNECT TO M3 USER tmwin USING REPLACE_WITH_DB2_PASSWORD && db2 -tvf \"C:\\clients\\midway\\webtools\\invoice_export\\back_end\\export_script.sql\" && db2 CONNECT RESET\""}}
+{"ts":"2025-08-18 13:52:10","level":"INFO","msg":"db2_completed","data":{"rc":4,"out_len":115,"err_len":0}}

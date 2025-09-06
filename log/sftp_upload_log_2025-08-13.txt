@@ -1,0 +1,24 @@
+[2025-08-13 21:20:18] Starting SFTP uploads for 2025-08-13
+[2025-08-13 21:20:35] [mdyt_ff_t] Upload failed to incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13 21:20:45] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-13 21:20:45] Finished SFTP uploads for 2025-08-13
+[2025-08-13 21:38:32] Starting SFTP uploads for 2025-08-13
+[2025-08-13 21:38:44] [mdyt_ff_t] Login failed to b2b.sit.veraction.com
+[2025-08-13 21:38:54] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-13 21:38:54] Finished SFTP uploads for 2025-08-13
+[2025-08-13 21:43:29] Starting SFTP uploads for 2025-08-13
+[2025-08-13 21:43:31] [mdyt_ff_t] Successfully uploaded C:/trax_invoice_export/SHWN_MDYT_MT_2025-08-13.csv to incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13 21:43:41] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-13 21:43:41] Finished SFTP uploads for 2025-08-13
+[2025-08-13 22:06:26] Starting SFTP uploads for 2025-08-13
+[2025-08-13 22:06:36] [mdyt_ff_t] Login failed to b2b.sit.veraction.com
+[2025-08-13 22:06:46] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-13 22:06:46] Finished SFTP uploads for 2025-08-13
+[2025-08-13 22:22:46] Starting SFTP uploads for 2025-08-13
+[2025-08-13 22:22:56] [mdyt_ff_t] Login failed to b2b.sit.veraction.com
+[2025-08-13 22:23:06] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-13 22:23:06] Finished SFTP uploads for 2025-08-13
+[2025-08-13 22:48:31] Starting SFTP uploads for 2025-08-13
+[2025-08-13 22:48:41] [mdyt_ff_t] Login failed to b2b.sit.veraction.com
+[2025-08-13 22:48:51] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-13 22:48:51] Finished SFTP uploads for 2025-08-13

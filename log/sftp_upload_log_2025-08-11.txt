@@ -1,0 +1,12 @@
+[2025-08-11 13:50:15] Starting SFTP uploads for 2025-08-11
+[2025-08-11 13:56:27] Starting SFTP uploads for 2025-08-11
+[2025-08-11 13:58:15] ERROR: Private key not found at C:/midway keys/midway_private.key
+[2025-08-11 14:03:54] Starting SFTP uploads for 2025-08-11
+[2025-08-11 14:03:54] [Test] Private key not found at C:/midway keys/midway_private_test.key
+[2025-08-11 14:03:54] [Prod] Private key not found at C:/midway keys/midway_private_prod.key
+[2025-08-11 14:03:54] Finished SFTP uploads for 2025-08-11
+[2025-08-11 14:07:15] Starting SFTP uploads for 2025-08-11
+[2025-08-11 14:07:15] [mdyt_ff_t] Private key not found. Upload skipped.
+[2025-08-11 14:07:15] [mdyt_ff_p] Private key not found. Upload skipped.
+[2025-08-11 14:07:15] Finished SFTP uploads for 2025-08-11
+[2025-08-11 21:59:58] Starting SFTP uploads for 2025-08-11

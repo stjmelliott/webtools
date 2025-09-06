@@ -1,0 +1,158 @@
+USERID: ADMINISTRATOR
+GROUPS: sysadmin,admin,crm,rm,bms,recap,img,carriers,quotes,dup,drvpay
+Groups Array: Array
+(
+    [0] => sysadmin
+    [1] => admin
+    [2] => crm
+    [3] => rm
+    [4] => bms
+    [5] => recap
+    [6] => img
+    [7] => carriers
+    [8] => quotes
+    [9] => dup
+    [10] => drvpay
+)
+
+GET Parameters: Array
+(
+)
+
+POST Parameters: Array
+(
+)
+
+
+User has access. Proceeding with script.
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+USERID: ADMINISTRATOR
+GROUPS: sysadmin,admin,crm,rm,bms,recap,img,carriers,quotes,dup,drvpay
+Groups Array: Array
+(
+    [0] => sysadmin
+    [1] => admin
+    [2] => crm
+    [3] => rm
+    [4] => bms
+    [5] => recap
+    [6] => img
+    [7] => carriers
+    [8] => quotes
+    [9] => dup
+    [10] => drvpay
+)
+
+GET Parameters: Array
+(
+)
+
+POST Parameters: Array
+(
+)
+
+
+User has access. Proceeding with script.
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+USERID: ADMINISTRATOR
+GROUPS: sysadmin,admin,crm,rm,bms,recap,img,carriers,quotes,dup,drvpay
+Groups Array: Array
+(
+    [0] => sysadmin
+    [1] => admin
+    [2] => crm
+    [3] => rm
+    [4] => bms
+    [5] => recap
+    [6] => img
+    [7] => carriers
+    [8] => quotes
+    [9] => dup
+    [10] => drvpay
+)
+
+GET Parameters: Array
+(
+)
+
+POST Parameters: Array
+(
+)
+
+
+User has access. Proceeding with script.
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered header.php
+USERID: ADMINISTRATOR
+GROUPS: sysadmin,admin,crm,rm,bms,recap,img,carriers,quotes,dup,drvpay
+Groups Array: Array
+(
+    [0] => sysadmin
+    [1] => admin
+    [2] => crm
+    [3] => rm
+    [4] => bms
+    [5] => recap
+    [6] => img
+    [7] => carriers
+    [8] => quotes
+    [9] => dup
+    [10] => drvpay
+)
+
+GET Parameters: Array
+(
+)
+
+POST Parameters: Array
+(
+)
+
+
+User has access. Proceeding with script.
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered header.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Entered process.php
+Config.php loaded successfully
+Exited process.php
+Config.php loaded successfully
+Exited process.php
+Config.php loaded successfully
+Config.php loaded successfully
+Config.php loaded successfully
+Config.php loaded successfully

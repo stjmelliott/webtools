@@ -1,0 +1,5 @@
+[2025-08-15 11:58:14] Running command: db2cmd /c /w /i "db2 CONNECT TO  USER  USING  && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 4
+SQL0104N  An unexpected token "USING" was found following "USER".  Expected
+tokens may include:  "USER".  SQLSTATE=42601
+

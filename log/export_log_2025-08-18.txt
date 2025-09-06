@@ -1,0 +1,1 @@
+[2025-08-18 13:57:54] Export complete to C:/trax_invoice_export/SHWN_MDYT_MT_2025-08-18.csv

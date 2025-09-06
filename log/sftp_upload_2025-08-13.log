@@ -1,0 +1,27 @@
+[2025-08-13T14:29:45-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T14:29:47-05:00] SUCCESS Uploaded to SIT: incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13T14:29:47-05:00] INFO PROD upload is DISABLED by configuration. No attempt was made.
+[2025-08-13T14:38:35-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T14:38:50-05:00] ERROR SIT login failed for user mdyt_ff_t (key refused or account issue).
+[2025-08-13T15:03:07-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:03:08-05:00] SUCCESS Uploaded to SIT: incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13T15:03:08-05:00] INFO PROD upload is DISABLED by configuration. No attempt was made.
+[2025-08-13T15:03:25-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:03:41-05:00] SUCCESS Uploaded to SIT: incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13T15:03:41-05:00] INFO PROD upload is DISABLED by configuration. No attempt was made.
+[2025-08-13T15:06:49-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:06:57-05:00] SUCCESS Uploaded to SIT: incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13T15:06:57-05:00] INFO PROD upload is DISABLED by configuration. No attempt was made.
+[2025-08-13T15:23:14-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:23:30-05:00] ERROR SIT login failed for user mdyt_ff_t (key refused or account issue).
+[2025-08-13T15:30:28-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:30:43-05:00] ERROR SIT login failed for user mdyt_ff_t (key refused or account issue).
+[2025-08-13T15:31:29-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:31:44-05:00] ERROR SIT login failed for user mdyt_ff_t (key refused or account issue).
+[2025-08-13T15:35:39-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:35:54-05:00] ERROR SIT login failed for user mdyt_ff_t (key refused or account issue).
+[2025-08-13T15:36:32-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:36:47-05:00] ERROR SIT login failed for user mdyt_ff_t (key refused or account issue).
+[2025-08-13T15:38:28-05:00] INFO Starting SIT upload to b2b.sit.veraction.com:8022 as mdyt_ff_t
+[2025-08-13T15:38:43-05:00] SUCCESS Uploaded to SIT: incoming/generic_ff/SHWN_MDYT_MT_2025-08-13.csv
+[2025-08-13T15:38:43-05:00] INFO PROD upload is DISABLED by configuration. No attempt was made.

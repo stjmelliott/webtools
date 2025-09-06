@@ -1,0 +1,4 @@
+[2025-08-15 04:54:48] Starting SFTP uploads for 2025-08-15
+[2025-08-15 04:54:53] [mdyt_ff_t] Upload failed to incoming/generic_ff/SHWN_MDYT_MT_2025-08-15.csv
+[2025-08-15 04:55:03] [mdyt_ff_p] Login failed to b2b.veraction.com
+[2025-08-15 04:55:03] Finished SFTP uploads for 2025-08-15

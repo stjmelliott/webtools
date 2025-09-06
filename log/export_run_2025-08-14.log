@@ -1,0 +1,13 @@
+[2025-08-14 21:54:27] Running command: db2cmd /c /w /i "db2 CONNECT TO M3 USER tmwin USING S0rdf1sh && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 8
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+DB21005E  An error occurred while accessing the file
+"C:/MidwayExport/export_script.sql".
+
+

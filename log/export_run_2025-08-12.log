@@ -1,0 +1,195 @@
+[2025-08-12 10:09:31] Running command: db2cmd /c /w /i "db2 CONNECT TO M3 USER tmwin USING S0rdf1sh && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 4
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+CONNECT TO M3 USER tmwin USING
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+
+EXPORT TO C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv OF DEL MODIFIED BY COLDEL, NOCHARDEL SELECT BILL_NUMBER                         AS invoice_number, VARCHAR_FORMAT(BILL_DATE, 'YYYY-MM-DD') AS invoice_date, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS invoice_amount, TRACE_NO                            AS tracking_number, 'SHWN'                              AS client_code, 'MDYT'                              AS carrier_code_scac, CUSTOMER                            AS account_number, 'CC'                                AS bill_type_ref, 'Mid-Way Transportation, Inc.'      AS remit_to_company, 'PO Box 756'                        AS remit_to_address_1, 'Hewitt'                            AS remit_to_city, 'TX'                                AS remit_to_state_province, '76643'                             AS remit_to_zip_postal_code, 'US'                                AS remit_to_country, CALLNAME                            AS bill_to_company, CALLADDR1                           AS bill_to_address_1, CALLCITY                            AS bill_to_city, 'US'                                AS bill_to_country, ORIGNAME                            AS shipper_company, ORIGADDR1                           AS shipper_address_1, ORIGCITY                            AS shipper_city, ORIGPROV                            AS shipper_state, ORIGPC                              AS shipper_zip, 'US'                                AS shipper_country, DESTNAME                            AS consignee_company, DESTADDR1                           AS consignee_address_1, DESTCITY                            AS consignee_city, DESTPROV                            AS consignee_state, DESTPC                              AS consignee_zip, 'US'                                AS consignee_country, SERVICE_LEVEL                       AS service_level, DATE(ACTUAL_PICKUP)                AS ship_date, PIECES                              AS pieces, 'EA'                                AS package_code_ref, CAST(WEIGHT AS DECIMAL(10,2))       AS bill_weight, CAST(WEIGHT AS DECIMAL(10,2))       AS ship_weight, 'X'                                 AS volume_unit_of_measure, 'L'                                 AS weight_unit_of_measure, BILL_NUMBER_KEY                     AS bol_number, COMMODITY                           AS freight_description, DISTANCE                            AS total_miles, CAST(CHARGES AS DECIMAL(10,2))      AS freight_charge, CAST(XCHARGES AS DECIMAL(10,2))     AS other_charges, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS total_charge FROM TMWIN.TLORDER WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = '' ORDER BY BILL_NUMBER
+SQL3104N  The Export utility is beginning to export data to file
+"C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv".
+
+SQL3105N  The Export utility has finished exporting "502" rows.
+
+
+Number of rows exported: 502
+
+
+UPDATE TMWIN.TLORDER SET USER10 = 'Exported ' || VARCHAR_FORMAT(CURRENT DATE, 'YYYY-MM-DD') WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = ''
+DB20000I  The SQL command completed successfully.
+
+COMMIT
+DB20000I  The SQL command completed successfully.
+
+CONNECT RESET
+DB20000I  The SQL command completed successfully.
+
+SQL1024N  A database connection does not exist.  SQLSTATE=08003
+
+[2025-08-12 10:09:59] Running command: db2cmd /c /w /i "db2 CONNECT TO M3 USER tmwin USING S0rdf1sh && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 1
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+CONNECT TO M3 USER tmwin USING
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+
+EXPORT TO C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv OF DEL MODIFIED BY COLDEL, NOCHARDEL SELECT BILL_NUMBER                         AS invoice_number, VARCHAR_FORMAT(BILL_DATE, 'YYYY-MM-DD') AS invoice_date, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS invoice_amount, TRACE_NO                            AS tracking_number, 'SHWN'                              AS client_code, 'MDYT'                              AS carrier_code_scac, CUSTOMER                            AS account_number, 'CC'                                AS bill_type_ref, 'Mid-Way Transportation, Inc.'      AS remit_to_company, 'PO Box 756'                        AS remit_to_address_1, 'Hewitt'                            AS remit_to_city, 'TX'                                AS remit_to_state_province, '76643'                             AS remit_to_zip_postal_code, 'US'                                AS remit_to_country, CALLNAME                            AS bill_to_company, CALLADDR1                           AS bill_to_address_1, CALLCITY                            AS bill_to_city, 'US'                                AS bill_to_country, ORIGNAME                            AS shipper_company, ORIGADDR1                           AS shipper_address_1, ORIGCITY                            AS shipper_city, ORIGPROV                            AS shipper_state, ORIGPC                              AS shipper_zip, 'US'                                AS shipper_country, DESTNAME                            AS consignee_company, DESTADDR1                           AS consignee_address_1, DESTCITY                            AS consignee_city, DESTPROV                            AS consignee_state, DESTPC                              AS consignee_zip, 'US'                                AS consignee_country, SERVICE_LEVEL                       AS service_level, DATE(ACTUAL_PICKUP)                AS ship_date, PIECES                              AS pieces, 'EA'                                AS package_code_ref, CAST(WEIGHT AS DECIMAL(10,2))       AS bill_weight, CAST(WEIGHT AS DECIMAL(10,2))       AS ship_weight, 'X'                                 AS volume_unit_of_measure, 'L'                                 AS weight_unit_of_measure, BILL_NUMBER_KEY                     AS bol_number, COMMODITY                           AS freight_description, DISTANCE                            AS total_miles, CAST(CHARGES AS DECIMAL(10,2))      AS freight_charge, CAST(XCHARGES AS DECIMAL(10,2))     AS other_charges, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS total_charge FROM TMWIN.TLORDER WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = '' ORDER BY BILL_NUMBER
+SQL3104N  The Export utility is beginning to export data to file
+"C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv".
+
+SQL3105N  The Export utility has finished exporting "0" rows.
+
+
+Number of rows exported: 0
+
+
+UPDATE TMWIN.TLORDER SET USER10 = 'Exported ' || VARCHAR_FORMAT(CURRENT DATE, 'YYYY-MM-DD') WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = ''
+SQL0100W  No row was found for FETCH, UPDATE or DELETE; or the result of a
+query is an empty table.  SQLSTATE=02000
+
+COMMIT
+DB20000I  The SQL command completed successfully.
+
+CONNECT RESET
+DB20000I  The SQL command completed successfully.
+
+
+[2025-08-12 10:12:51] Running command: db2cmd /c /w /i "db2 CONNECT TO M3 USER tmwin USING S0rdf1sh && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 4
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+CONNECT TO M3 USER tmwin USING
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+
+EXPORT TO C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv OF DEL MODIFIED BY COLDEL, NOCHARDEL SELECT BILL_NUMBER                         AS invoice_number, VARCHAR_FORMAT(BILL_DATE, 'YYYY-MM-DD') AS invoice_date, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS invoice_amount, TRACE_NO                            AS tracking_number, 'SHWN'                              AS client_code, 'MDYT'                              AS carrier_code_scac, CUSTOMER                            AS account_number, 'CC'                                AS bill_type_ref, 'Mid-Way Transportation, Inc.'      AS remit_to_company, 'PO Box 756'                        AS remit_to_address_1, 'Hewitt'                            AS remit_to_city, 'TX'                                AS remit_to_state_province, '76643'                             AS remit_to_zip_postal_code, 'US'                                AS remit_to_country, CALLNAME                            AS bill_to_company, CALLADDR1                           AS bill_to_address_1, CALLCITY                            AS bill_to_city, 'US'                                AS bill_to_country, ORIGNAME                            AS shipper_company, ORIGADDR1                           AS shipper_address_1, ORIGCITY                            AS shipper_city, ORIGPROV                            AS shipper_state, ORIGPC                              AS shipper_zip, 'US'                                AS shipper_country, DESTNAME                            AS consignee_company, DESTADDR1                           AS consignee_address_1, DESTCITY                            AS consignee_city, DESTPROV                            AS consignee_state, DESTPC                              AS consignee_zip, 'US'                                AS consignee_country, SERVICE_LEVEL                       AS service_level, DATE(ACTUAL_PICKUP)                AS ship_date, PIECES                              AS pieces, 'EA'                                AS package_code_ref, CAST(WEIGHT AS DECIMAL(10,2))       AS bill_weight, CAST(WEIGHT AS DECIMAL(10,2))       AS ship_weight, 'X'                                 AS volume_unit_of_measure, 'L'                                 AS weight_unit_of_measure, BILL_NUMBER_KEY                     AS bol_number, COMMODITY                           AS freight_description, DISTANCE                            AS total_miles, CAST(CHARGES AS DECIMAL(10,2))      AS freight_charge, CAST(XCHARGES AS DECIMAL(10,2))     AS other_charges, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS total_charge FROM TMWIN.TLORDER WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = '' ORDER BY BILL_NUMBER
+SQL3104N  The Export utility is beginning to export data to file
+"C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv".
+
+SQL3105N  The Export utility has finished exporting "502" rows.
+
+
+Number of rows exported: 502
+
+
+UPDATE TMWIN.TLORDER SET USER10 = 'Exported ' || VARCHAR_FORMAT(CURRENT DATE, 'YYYY-MM-DD') WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = ''
+DB20000I  The SQL command completed successfully.
+
+COMMIT
+DB20000I  The SQL command completed successfully.
+
+CONNECT RESET
+DB20000I  The SQL command completed successfully.
+
+SQL1024N  A database connection does not exist.  SQLSTATE=08003
+
+[2025-08-12 10:15:47] Running command: db2cmd /c /w /i "db2 CONNECT TO M3 USER tmwin USING S0rdf1sh && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 4
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+CONNECT TO M3 USER tmwin USING
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+
+EXPORT TO C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv OF DEL MODIFIED BY COLDEL, NOCHARDEL SELECT BILL_NUMBER                         AS invoice_number, VARCHAR_FORMAT(BILL_DATE, 'YYYY-MM-DD') AS invoice_date, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS invoice_amount, TRACE_NO                            AS tracking_number, 'SHWN'                              AS client_code, 'MDYT'                              AS carrier_code_scac, CUSTOMER                            AS account_number, 'CC'                                AS bill_type_ref, 'Mid-Way Transportation, Inc.'      AS remit_to_company, 'PO Box 756'                        AS remit_to_address_1, 'Hewitt'                            AS remit_to_city, 'TX'                                AS remit_to_state_province, '76643'                             AS remit_to_zip_postal_code, 'US'                                AS remit_to_country, CALLNAME                            AS bill_to_company, CALLADDR1                           AS bill_to_address_1, CALLCITY                            AS bill_to_city, 'US'                                AS bill_to_country, ORIGNAME                            AS shipper_company, ORIGADDR1                           AS shipper_address_1, ORIGCITY                            AS shipper_city, ORIGPROV                            AS shipper_state, ORIGPC                              AS shipper_zip, 'US'                                AS shipper_country, DESTNAME                            AS consignee_company, DESTADDR1                           AS consignee_address_1, DESTCITY                            AS consignee_city, DESTPROV                            AS consignee_state, DESTPC                              AS consignee_zip, 'US'                                AS consignee_country, SERVICE_LEVEL                       AS service_level, DATE(ACTUAL_PICKUP)                AS ship_date, PIECES                              AS pieces, 'EA'                                AS package_code_ref, CAST(WEIGHT AS DECIMAL(10,2))       AS bill_weight, CAST(WEIGHT AS DECIMAL(10,2))       AS ship_weight, 'X'                                 AS volume_unit_of_measure, 'L'                                 AS weight_unit_of_measure, BILL_NUMBER_KEY                     AS bol_number, COMMODITY                           AS freight_description, DISTANCE                            AS total_miles, CAST(CHARGES AS DECIMAL(10,2))      AS freight_charge, CAST(XCHARGES AS DECIMAL(10,2))     AS other_charges, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS total_charge FROM TMWIN.TLORDER WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = '' ORDER BY BILL_NUMBER
+SQL3104N  The Export utility is beginning to export data to file
+"C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv".
+
+SQL3105N  The Export utility has finished exporting "502" rows.
+
+
+Number of rows exported: 502
+
+
+UPDATE TMWIN.TLORDER SET USER10 = 'Exported ' || VARCHAR_FORMAT(CURRENT DATE, 'YYYY-MM-DD') WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = ''
+DB20000I  The SQL command completed successfully.
+
+COMMIT
+DB20000I  The SQL command completed successfully.
+
+CONNECT RESET
+DB20000I  The SQL command completed successfully.
+
+SQL1024N  A database connection does not exist.  SQLSTATE=08003
+
+[2025-08-12 10:22:13] Running command: db2cmd /c /w /i "db2 CONNECT TO M3 USER tmwin USING S0rdf1sh && db2 -tvf C:/MidwayExport/export_script.sql && db2 CONNECT RESET"
+Return code: 4
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+CONNECT TO M3 USER tmwin USING
+
+   Database Connection Information
+
+ Database server        = DB2/NT64 9.7.7
+ SQL authorization ID   = TMWIN
+ Local database alias   = M3
+
+
+EXPORT TO C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv OF DEL MODIFIED BY COLDEL, NOCHARDEL SELECT BILL_NUMBER                         AS invoice_number, VARCHAR_FORMAT(BILL_DATE, 'YYYY-MM-DD') AS invoice_date, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS invoice_amount, TRACE_NO                            AS tracking_number, 'SHWN'                              AS client_code, 'MDYT'                              AS carrier_code_scac, CUSTOMER                            AS account_number, 'CC'                                AS bill_type_ref, 'Mid-Way Transportation, Inc.'      AS remit_to_company, 'PO Box 756'                        AS remit_to_address_1, 'Hewitt'                            AS remit_to_city, 'TX'                                AS remit_to_state_province, '76643'                             AS remit_to_zip_postal_code, 'US'                                AS remit_to_country, CALLNAME                            AS bill_to_company, CALLADDR1                           AS bill_to_address_1, CALLCITY                            AS bill_to_city, 'US'                                AS bill_to_country, ORIGNAME                            AS shipper_company, ORIGADDR1                           AS shipper_address_1, ORIGCITY                            AS shipper_city, ORIGPROV                            AS shipper_state, ORIGPC                              AS shipper_zip, 'US'                                AS shipper_country, DESTNAME                            AS consignee_company, DESTADDR1                           AS consignee_address_1, DESTCITY                            AS consignee_city, DESTPROV                            AS consignee_state, DESTPC                              AS consignee_zip, 'US'                                AS consignee_country, SERVICE_LEVEL                       AS service_level, DATE(ACTUAL_PICKUP)                AS ship_date, PIECES                              AS pieces, 'EA'                                AS package_code_ref, CAST(WEIGHT AS DECIMAL(10,2))       AS bill_weight, CAST(WEIGHT AS DECIMAL(10,2))       AS ship_weight, 'X'                                 AS volume_unit_of_measure, 'L'                                 AS weight_unit_of_measure, BILL_NUMBER_KEY                     AS bol_number, COMMODITY                           AS freight_description, DISTANCE                            AS total_miles, CAST(CHARGES AS DECIMAL(10,2))      AS freight_charge, CAST(XCHARGES AS DECIMAL(10,2))     AS other_charges, CAST(TOTAL_CHARGES AS DECIMAL(10,2)) AS total_charge FROM TMWIN.TLORDER WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = '' ORDER BY BILL_NUMBER
+SQL3104N  The Export utility is beginning to export data to file
+"C:\trax_invoice_export\SHWN_MDYT_MT_2025-07-18.csv".
+
+SQL3105N  The Export utility has finished exporting "4" rows.
+
+
+Number of rows exported: 4
+
+
+UPDATE TMWIN.TLORDER SET USER10 = 'Exported ' || VARCHAR_FORMAT(CURRENT DATE, 'YYYY-MM-DD') WHERE CURRENT_STATUS IN ('APPRVD','BILLD') AND CUSTOMER = 'SHERBILLTO' AND COALESCE(USER10, '') = ''
+DB20000I  The SQL command completed successfully.
+
+COMMIT
+DB20000I  The SQL command completed successfully.
+
+CONNECT RESET
+DB20000I  The SQL command completed successfully.
+
+SQL1024N  A database connection does not exist.  SQLSTATE=08003
+

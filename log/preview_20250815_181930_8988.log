@@ -1,0 +1,11 @@
+{"ts":"2025-08-15 18:19:30","elapsed":0.001,"level":"INFO","event":"logger_open","data":{"file":"C:\\clients\\midway\\webtools\\log\\preview_20250815_181930_8988.log"}}
+{"ts":"2025-08-15 18:19:30","elapsed":0.001,"level":"INFO","event":"wrapper_start","data":[]}
+{"ts":"2025-08-15 18:19:30","elapsed":0.001,"level":"INFO","event":"config_loaded","data":{"config_path":"C:\\clients\\midway\\webtools\\invoice_export\\config\\invoice_export_config.php","has_cli_override":true}}
+{"ts":"2025-08-15 18:19:30","elapsed":0.065,"level":"INFO","event":"php_cli_probe","data":{"tried":[{"path":"C:\\xampp\\php\\php.exe","rc":0,"first_line":"PHP Warning:  PHP Startup: Unable to load dynamic library 'php_ibm_db2.dll' (tried: \\xampp\\php\\ext\\php_ibm_db2.dll (The specified module could not be found.), \\xampp\\php\\ext\\php_php_ibm_db2.dll.dll (The specified module could not be found.)) in Unknown on line 0"}]}}
+{"ts":"2025-08-15 18:19:30","elapsed":0.065,"level":"INFO","event":"php_cli_selected","data":{"php":"C:\\xampp\\php\\php.exe","force":true}}
+{"ts":"2025-08-15 18:19:31","elapsed":0.44,"level":"INFO","event":"cli_run_first","data":{"cmd":"C:\\xampp\\php\\php.exe -f \"C:\\clients\\midway\\webtools\\invoice_export\\back_end\\midway_query_only.php\"","rc":0,"timeout":false,"stdout_len":815,"stderr_len":745}}
+{"ts":"2025-08-15 18:19:31","elapsed":0.44,"level":"INFO","event":"backend_json_ok","data":{"file":"C:/trax_invoice_export/SHWN_MDYT_MT_2025-08-15.csv"}}
+{"ts":"2025-08-15 18:19:31","elapsed":0.44,"level":"WARN","event":"deleted_previous_csv","data":{"csv":"C:/trax_invoice_export/SHWN_MDYT_MT_2025-08-15.csv"}}
+{"ts":"2025-08-15 18:19:31","elapsed":0.815,"level":"INFO","event":"cli_run_second","data":{"cmd":"C:\\xampp\\php\\php.exe -f \"C:\\clients\\midway\\webtools\\invoice_export\\back_end\\midway_query_only.php\"","rc":0,"timeout":false,"stdout_len":815,"stderr_len":745}}
+{"ts":"2025-08-15 18:19:31","elapsed":0.815,"level":"WARN","event":"second_json_missing_using_csv_regex","data":{"csv":"C:\\/trax_invoice_export\\/SHWN_MDYT_MT_2025-08-15.csv"}}
+{"ts":"2025-08-15 18:19:31","elapsed":0.855,"level":"INFO","event":"wrapper_end","data":{"csv":"C:\\/trax_invoice_export\\/SHWN_MDYT_MT_2025-08-15.csv","rows_total":569,"rows_displayed":569,"sum":368290.8,"truncated":false,"ok":true}}
