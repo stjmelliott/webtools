@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Index Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        header {
+            background-color: #007bff; /* Blue header */
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; /* Space below header */
+        }
+
+        h1 {
+           font-size: 2.5em; /* Increased size */
+        }
+
+        main {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 800px; /* Limit width on larger screens */
+            width: 90%; /* Occupy most of the screen on smaller devices */
+            margin-bottom: 20px; /* Space below main content */
+        }
+
+        .fun-image {
+            max-width: 300px; /* Limit image width */
+            height: auto;
+            display: block; /* Prevents image from affecting text flow */
+            margin: 20px auto; /* Center the image */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+        }
+
+        footer {
+            background-color: #333; /* Darker footer */
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: auto; /* Push footer to bottom */
+        }
+
+        a {
+            color: #007bff; /* Blue link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments - Example */
+        @media (max-width: 600px) {
+            main {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Fun Page!</h1>
+    </header>
+
+    <main>
+        <p>Hello there! This is the index page for my awesome website.  I'm still building it, but I'm excited to share it with you soon.</p>
+
+        <img class="fun-image" src="https://via.placeholder.com/300" alt="Placeholder Image">  <p>In the meantime, you can check out some of my other projects:</p>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+
+        <p>Stay tuned for more updates!</p>
+
+    </main>
+
+    <footer>
+        &copy; 2023 My Fun Website
+    </footer>
+
+</body>
+</html>

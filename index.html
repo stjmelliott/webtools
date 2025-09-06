@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mid-Way Transportation Inc.</title>
+<style>
+    :root {
+        --primary-red: #e30613;
+        --primary-blue: #001e60;
+        --dark-text: #1a1a1a;
+        --light-bg: #f7f7f7;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background-color: var(--light-bg);
+        color: var(--dark-text);
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    header {
+        background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-blue) 100%);
+        color: #fff;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    header img {
+        width: 96px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+    }
+    header p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    .cta-phone {
+        font-size: 1.5rem;
+        background: #fff;
+        color: var(--primary-blue);
+        display: inline-block;
+        padding: 0.75rem 1.25rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    main {
+        flex: 1;
+        width: 90%;
+        max-width: 1000px;
+        margin: 2rem auto;
+    }
+    section {
+        margin-bottom: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h2 {
+        margin-bottom: 1rem;
+        color: var(--primary-blue);
+        font-size: 1.5rem;
+        border-bottom: 3px solid var(--primary-red);
+        display: inline-block;
+        padding-bottom: 0.3rem;
+    }
+    ul {
+        list-style: none;
+        margin-left: 0.5rem;
+    }
+    ul li {
+        margin: 0.25rem 0;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    footer {
+        background: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 2rem;
+        }
+        .cta-phone {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="data:image/png;base64,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" alt="Mid-Way Transportation logo">
+    <h1>Mid‑Way Transportation Inc.</h1>
+    <p>Texas‑based interstate carrier — hauling what keeps America moving.</p>
+    <a class="cta-phone" href="tel:+12546666161">(254) 666‑6161</a>
+</header>
+
+<main>
+    <section>
+        <h2>Key Credentials</h2>
+        <ul class="grid">
+            <li><strong>USDOT:</strong> 225063</li>
+            <li><strong>MC:</strong> 155686</li>
+            <li><strong>USDOT Status:</strong> Active</li>
+            <li><strong>Miles (2024):</strong> 743,644</li>
+            <li><strong>Power Units:</strong> 19</li>
+            <li><strong>Drivers:</strong> 10</li>
+            <li><strong>Operating Authority:</strong> Property</li>
+            <li><strong>Safety:</strong> 0% Out‑of‑Service (24‑mo.)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Freight Specialties</h2>
+        <ul>
+            <li>General Freight</li>
+            <li>Metals — sheets, coils, rolls</li>
+            <li>Logs, Poles, Lumber &amp; Beams</li>
+            <li>Building Materials &amp; Construction</li>
+            <li>Machinery &amp; Large Objects</li>
+            <li>Grain, Feed &amp; Hay</li>
+            <li>Paper Products</li>
+            <li>Agricultural / Farm Supplies</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Service Footprint</h2>
+        <p>Delivering across the lower 48 with a focus on Southwestern and Southern lanes. 
+        Whether it’s flatbed, dry van, or specialized moves, our team gets it there — safely and on time.</p>
+    </section>
+
+    <section>
+        <h2>Contact &amp; Compliance</h2>
+        <p>
+            <strong>Headquarters:</strong><br>
+            309 Sun Valley Blvd<br>
+            Hewitt, TX 76643<br><br>
+            <strong>Mailing:</strong><br>
+            PO Box 756<br>
+            Hewitt, TX 76643
+        </p>
+        <p>
+            For rate requests, load tenders, or driver opportunities:<br>
+            <a href="mailto:dispatch@midway‑transport.com">dispatch@midway‑transport.com</a> &nbsp;|&nbsp; 
+            <a href="tel:+12546666161">(254) 666‑6161</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    © 2025 Mid‑Way Transportation Inc. All rights reserved.
+</footer>
+</body>
+</html>
