@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.table th.rightCell,
+.table td.rightCell {
+  text-align: right;
+}
+
+.boxed {
+	padding: 5px;
+	width: 98%;
+	background-color: #EEEEEE;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FD0003;
+	border-right-color: #FD0003;
+	border-bottom-color: #FD0003;
+	border-left-color: #FD0003;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow:    3px 3px 4px 4px #FD9398;
+	-webkit-box-shadow: 3px 3px 4px 4px #FD9398;
+	box-shadow:         3px 3px 4px 4px #FD9398;
+}
+
+.boxed2 {
+	padding: 5px;
+	/*width: 98%;*/
+	background-color: #EEEEEE;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FD0003;
+	border-right-color: #FD0003;
+	border-bottom-color: #FD0003;
+	border-left-color: #FD0003;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow:    3px 3px 4px 4px #FD9398;
+	-webkit-box-shadow: 3px 3px 4px 4px #FD9398;
+	box-shadow:         3px 3px 4px 4px #FD9398;
+}
+
+.table2 th,
+.table2 td,
+.table2 .table-striped {
+  background-color: transparent;
+  padding: none;
+  border: none;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table2 tbody > tr:nth-child(odd) > td,
+.table2 tbody > tr:nth-child(odd) > th {
+  background-color: transparent;
+}
+
+td.col100 {
+	width: auto !important;
+	width: 100px;
+	min-width: 100px;
+}
+
+td.col80 {
+	width: auto !important;
+	width: 80px;
+	min-width: 80px;
+}
+
+.table tbody tr > td.success {
+  background-color: #66FF66;
+}
+
+.table tbody tr > td.error {
+  background-color: #FFB3B1;
+}
+
+.table tbody tr > td.worse {
+  background-color: #FF3333;
+}
+
+	.form-signin {
+		max-width: 400px;
+		padding: 19px 29px 29px;
+		margin: 0 auto 20px;
+		background-color: #fff;
+		border: 1px solid #FD0003;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		/*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		*/
+		  -moz-box-shadow:    3px 3px 5px 6px #FD9398;
+  -webkit-box-shadow: 3px 3px 5px 6px #FD9398;
+  box-shadow:         3px 3px 5px 6px #FD9398;
+	}
+	.form-signin .form-signin-heading,
+	.form-signin .checkbox {
+		margin-bottom: 10px;
+	}
+	.form-signin input[type="text"],
+	.form-signin input[type="password"] {
+		font-size: 16px;
+		height: auto;
+		margin-bottom: 15px;
+		padding: 7px 9px;
+	}
